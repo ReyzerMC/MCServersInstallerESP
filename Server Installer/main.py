@@ -6,6 +6,8 @@ print("seleccione el tipo de servidor que desea:\n1: Spigot\n2: Vanilla (Solo ve
 
 seleccion = int(input('>>> '))
 
+remove('eula.txt')
+
 if seleccion == 1:
     print("Seleccionaste Spigot")
     mkelua = open('eula.txt', 'x')
