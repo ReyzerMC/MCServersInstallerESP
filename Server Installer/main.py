@@ -5,8 +5,10 @@ seleccion = 0
 print("seleccione el tipo de servidor que desea:\n1: Spigot\n2: Vanilla (Solo version mas reciente)")
 
 seleccion = int(input('>>> '))
-
-remove('eula.txt')
+try:
+    remove('eula.txt')
+except:
+    print("No existe el archivo eula.txt procediendo con la instalación")
 
 if seleccion == 1:
     print("Seleccionaste Spigot")
